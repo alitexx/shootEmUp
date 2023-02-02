@@ -19,20 +19,27 @@ public class enemyController : MonoBehaviour
         if (changeDirection)
         {
             enemyRB.velocity = new Vector2(1, 0) * -1 * moveSpeed;
+            enemyRB.transform.Translate(Vector3.down * Time.deltaTime * moveSpeed);
         } else
         {
             enemyRB.velocity = new Vector2(1, 0) * moveSpeed;
+            enemyRB.transform.Translate(Vector3.down * Time.deltaTime * moveSpeed);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Right")
+        //  TODO add something that checks enemy collisions. or makes it so they cannot collide with one another.
+        if ((collision.gameObject.tag == "Right") || (collision.gameObject.tag == "Enemy"))
         {
             changeDirection = true;
         } else if (collision.gameObject.tag == "Left")
         {
             changeDirection = false;
+        }
+        else if (collision.gameObject.tag == "Bottom")
+        {
+            transform.position = new Vector3(transform.position.x, 6.0f, transform.position.z);
         }
     }
 }
