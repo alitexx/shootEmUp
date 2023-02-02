@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemyBullet
       objectReference: {fileID: 0}
+    - target: {fileID: 5533249385479910167, guid: 319cd3d8f9700bb4f94ba7543b317c2d, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8722718387541772133, guid: 319cd3d8f9700bb4f94ba7543b317c2d, type: 3}
       propertyPath: m_RootOrder
       value: 0

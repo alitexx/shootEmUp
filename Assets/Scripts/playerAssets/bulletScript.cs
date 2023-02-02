@@ -18,4 +18,16 @@ public class bulletScript : MonoBehaviour
     {
         bulletRB.velocity = new Vector2(0, 1) * moveSpeed;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            collision.gameObject.SetActive(false);
+        }
+        else if (collision.gameObject.tag == "Top")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

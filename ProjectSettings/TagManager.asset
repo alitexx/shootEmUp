@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Right
   - Left
+  - Enemy
+  - Top
+  - Bottom
   layers:
   - Default
   - TransparentFX
@@ -13,10 +16,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - PlayerBullet
+  - EnemyBullet
   - 
   - 
   - 
