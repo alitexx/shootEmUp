@@ -14,7 +14,7 @@ public class instantDeath : MonoBehaviour
             Debug.Log("INSTANT DEATH");
             audioManager.loseGame();
             character.SetActive(false);
-            //playerController.playerHealth = 0;
+            playerController.isDead = true;
             loseGUI.gameObject.SetActive(!loseGUI.gameObject.activeInHierarchy);
         }
     }

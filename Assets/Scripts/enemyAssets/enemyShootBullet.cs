@@ -6,6 +6,7 @@ public class enemyShootBullet : MonoBehaviour
 {
 
     private Rigidbody2D bulletRB;
+    [SerializeField] Canvas loseGUI;
     private float moveSpeed = 10.0f;
 
     // Start is called before the first frame update
@@ -25,7 +26,11 @@ public class enemyShootBullet : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            Debug.Log("INSTANT DEATH");
+            audioManager.loseGame();
             collision.gameObject.SetActive(false);
+            playerController.isDead = true;
+            loseGUI.gameObject.SetActive(!loseGUI.gameObject.activeInHierarchy);
         } else if (collision.gameObject.tag == "Bottom")
         {
             Destroy(gameObject);

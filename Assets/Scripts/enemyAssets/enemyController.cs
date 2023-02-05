@@ -5,6 +5,7 @@ using UnityEngine;
 public class enemyController : MonoBehaviour
 {
     private Rigidbody2D enemyRB;
+    [SerializeField] Canvas loseGUI;
     private bool changeDirection = false;
     public float moveSpeed;
 
@@ -40,6 +41,13 @@ public class enemyController : MonoBehaviour
         else if (collision.gameObject.tag == "Bottom")
         {
             transform.position = new Vector3(transform.position.x, 6.0f, transform.position.z);
+        } else if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("INSTANT DEATH");
+            audioManager.loseGame();
+            collision.gameObject.SetActive(false);
+            playerController.isDead = true;
+            loseGUI.gameObject.SetActive(!loseGUI.gameObject.activeInHierarchy);
         }
     }
 }
