@@ -23,7 +23,6 @@ public class sceneManager : MonoBehaviour
     {
         anim.SetBool("Fade", true);
         yield return new WaitUntil(() => blackOutSquare.color.a == 1);
-        Debug.Log(beginLevel);
         SceneManager.LoadScene(beginLevel);
     }
 }

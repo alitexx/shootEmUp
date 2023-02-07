@@ -28,7 +28,7 @@ public class spawnEnemy : MonoBehaviour
 
     private IEnumerator enemySpawner()
     {
-
+        yield return new WaitForSeconds(5f);
         // spawn enemy
         if (enemyToSpawn) {
             Instantiate(enemy1, spawnPoint.position, Quaternion.identity);
@@ -36,8 +36,6 @@ public class spawnEnemy : MonoBehaviour
         {
             Instantiate(enemy2, spawnPoint.position, Quaternion.identity);
         }
-
-        yield return new WaitForSeconds(5f);
         debounce = false;
     }
 
