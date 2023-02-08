@@ -102,6 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loseGUI: {fileID: 0}
   moveSpeed: 5
+  enemiesFolder: {fileID: 0}
 --- !u!61 &2355934261165209838
 BoxCollider2D:
   m_ObjectHideFlags: 0

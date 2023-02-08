@@ -8,10 +8,12 @@ public class enemyController : MonoBehaviour
     [SerializeField] Canvas loseGUI;
     private bool changeDirection = false;
     public float moveSpeed;
+    private GameObject enemiesFolder;
 
     void Start()
     {
         enemyRB = gameObject.GetComponent<Rigidbody2D>();
+        enemiesFolder = GameObject.Find("enemies");
     }
 
     // Update is called once per frame
@@ -43,11 +45,9 @@ public class enemyController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, 6.0f, transform.position.z);
         } else if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("INSTANT DEATH");
-            audioManager.loseGame();
-            collision.gameObject.SetActive(false);
-            playerController.isDead = true;
-            loseGUI.gameObject.SetActive(!loseGUI.gameObject.activeInHierarchy);
+            // send player to lose screen
+            playerController.resetValues();
+            loseWinSceneManager.loadLevel("loseScreen");
         }
     }
 }

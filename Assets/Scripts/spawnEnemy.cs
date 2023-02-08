@@ -7,14 +7,11 @@ public class spawnEnemy : MonoBehaviour
     public Transform spawnPoint;
     public GameObject enemy1;
     public GameObject enemy2;
+    public Transform enemyParent;
 
-    private bool enemyToSpawn; // true is enemy1, false is enemy2
+    private bool enemyToSpawn = true; // true is enemy1, false is enemy2
 
     private bool debounce = false;
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -31,12 +28,12 @@ public class spawnEnemy : MonoBehaviour
 
         // spawn enemy
         if (enemyToSpawn) {
-            Instantiate(enemy1, spawnPoint.position, Quaternion.identity);
+            Instantiate(enemy1, spawnPoint.position, Quaternion.identity, enemyParent);
         } else
         {
-            Instantiate(enemy2, spawnPoint.position, Quaternion.identity);
+            Instantiate(enemy2, spawnPoint.position, Quaternion.identity, enemyParent);
         }
-
+        enemyToSpawn = !enemyToSpawn;
         yield return new WaitForSeconds(5f);
         debounce = false;
     }

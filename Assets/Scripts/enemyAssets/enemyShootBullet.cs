@@ -26,11 +26,8 @@ public class enemyShootBullet : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("INSTANT DEATH");
-            audioManager.loseGame();
-            collision.gameObject.SetActive(false);
-            playerController.isDead = true;
-            loseGUI.gameObject.SetActive(!loseGUI.gameObject.activeInHierarchy);
+            playerController.resetValues();
+            loseWinSceneManager.loadLevel("loseScreen");
         } else if (collision.gameObject.tag == "Bottom")
         {
             Destroy(gameObject);

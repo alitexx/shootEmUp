@@ -11,11 +11,14 @@ public class instantDeath : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            loseGUI.gameObject.SetActive(!loseGUI.gameObject.activeInHierarchy);
             Debug.Log("INSTANT DEATH");
+            
             audioManager.loseGame();
             character.SetActive(false);
             playerController.isDead = true;
-            loseGUI.gameObject.SetActive(!loseGUI.gameObject.activeInHierarchy);
+            Debug.Log(loseGUI.name);
+            
         }
     }
 }

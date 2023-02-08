@@ -17,14 +17,14 @@ public class audioManager : MonoBehaviour
 
     private void Start()
     {
-        win = this.transform.GetChild(0).GetComponent<AudioSource>();
-        lose = this.transform.GetChild(1).GetComponent<AudioSource>();
-        levelBGM = this.transform.GetChild(2).GetComponent<AudioSource>();
-        jump = this.transform.GetChild(4).GetComponent<AudioSource>();
-        winSFX = this.transform.GetChild(5).GetComponent<AudioSource>();
-        death = this.transform.GetChild(3).GetComponent<AudioSource>();
-        bulletSFX = this.transform.GetChild(6).GetComponent<AudioSource>();
-        takeDamageSFX = this.transform.GetChild(7).GetComponent<AudioSource>();
+        //win = this.transform.GetChild(0).GetComponent<AudioSource>();
+        //lose = this.transform.GetChild(1).GetComponent<AudioSource>();
+        //levelBGM = this.transform.GetChild(2).GetComponent<AudioSource>();
+        //jump = this.transform.GetChild(4).GetComponent<AudioSource>();
+        //winSFX = this.transform.GetChild(5).GetComponent<AudioSource>();
+        //death = this.transform.GetChild(3).GetComponent<AudioSource>();
+        //bulletSFX = this.transform.GetChild(6).GetComponent<AudioSource>();
+        //takeDamageSFX = this.transform.GetChild(7).GetComponent<AudioSource>();
 
         startGame();
     }
@@ -32,7 +32,7 @@ public class audioManager : MonoBehaviour
 
     public static void startGame()
     {
-        levelBGM.Play();
+        //levelBGM.Play();
     }
 
     public static void playerJump()
@@ -52,17 +52,17 @@ public class audioManager : MonoBehaviour
 
     public static void winGame()
     {
-        levelBGM.Stop();
-        Destroy(levelBGM);
-        winSFX.Play();
-        win.Play();
+        //levelBGM.Stop();
+        //Destroy(levelBGM);
+        //winSFX.Play();
+        //win.Play();
     }
 
     public static void loseGame()
     {
-        levelBGM.Stop();
-        Destroy(levelBGM);
-        death.Play();
-        lose.Play();
+        //levelBGM.Stop();
+        //Destroy(levelBGM);
+        //death.Play();
+        //lose.Play();
     }
 }

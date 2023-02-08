@@ -23,7 +23,9 @@ public class bulletScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            collision.gameObject.SetActive(false);
+            playerController.increasePlayerPoints();
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
         else if (collision.gameObject.tag == "Top")
         {
