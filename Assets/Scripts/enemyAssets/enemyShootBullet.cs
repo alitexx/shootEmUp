@@ -12,6 +12,7 @@ public class enemyShootBullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioManager.playerShoot();
         bulletRB = gameObject.GetComponent<Rigidbody2D>();   
     }
 
@@ -26,6 +27,7 @@ public class enemyShootBullet : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            audioManager.explosionSFX();
             playerController.resetValues();
             loseWinSceneManager.loadLevel("loseScreen");
         } else if (collision.gameObject.tag == "Bottom")

@@ -46,6 +46,7 @@ public class enemyController : MonoBehaviour
         } else if (collision.gameObject.tag == "Player")
         {
             // send player to lose screen
+            audioManager.explosionSFX();
             playerController.resetValues();
             loseWinSceneManager.loadLevel("loseScreen");
         }

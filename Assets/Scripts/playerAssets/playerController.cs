@@ -42,12 +42,12 @@ public class playerController : MonoBehaviour
     {
         playerPoints++;
         // TODO update at home
-        pointGUI.GetComponent<TextMeshProUGUI>().text = "Points:::";
-       if (playerPoints >= 5)
+        pointGUI.GetComponent<TextMeshProUGUI>().text = ("Points: " + (playerPoints).ToString());
+        if (playerPoints >= 3)
         {
             playerPoints = 0;
             levelNum++;
-            if (levelNum >= 3)
+            if (levelNum > 3)
             {
                 resetValues();
                 SceneManager.LoadScene("winScreen");

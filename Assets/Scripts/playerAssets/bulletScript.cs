@@ -10,6 +10,7 @@ public class bulletScript : MonoBehaviour
 
     void Start()
     {
+        audioManager.playerShoot();
         bulletRB = gameObject.GetComponent<Rigidbody2D>();
     }
 
@@ -23,6 +24,7 @@ public class bulletScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            audioManager.explosionSFX();
             playerController.increasePlayerPoints();
             Destroy(collision.gameObject);
             Destroy(gameObject);
