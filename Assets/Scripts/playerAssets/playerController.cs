@@ -35,7 +35,7 @@ public class playerController : MonoBehaviour
 
     public void playerMovement()
     {
-        rigidBod.velocity = new Vector2(Input.GetAxis("Horizontal"), rigidBod.velocity.y) * moveSpeed;
+        rigidBod.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rigidBod.velocity.y);
     }
 
     public static void increasePlayerPoints()
