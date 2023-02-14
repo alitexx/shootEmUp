@@ -8,6 +8,7 @@ public class pauseMenuManager : MonoBehaviour
     [SerializeField] Canvas pauseMenu;
     [SerializeField] GameObject Enemies;
     [SerializeField] GameObject EnemySpawner;
+    public static bool isActive = false;
 
 
     void Update()
@@ -20,8 +21,8 @@ public class pauseMenuManager : MonoBehaviour
     public void togglePause()
     {
         pauseMenu.gameObject.SetActive(!pauseMenu.gameObject.activeInHierarchy);
-        EnemySpawner.SetActive(!Enemies.activeInHierarchy);
         Enemies.SetActive(!Enemies.activeInHierarchy);
         player.SetActive(!player.activeInHierarchy);
+        isActive = !isActive;
     }
 }

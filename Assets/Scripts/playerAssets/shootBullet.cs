@@ -6,7 +6,7 @@ public class shootBullet : MonoBehaviour
 {
     private Transform bulletSpawn;
     public GameObject bullet;
-    private float debounce = 1.0f;
+    private float debounce = 0.5f;
     private float currentTime = 0.0f;
 
     void Start()

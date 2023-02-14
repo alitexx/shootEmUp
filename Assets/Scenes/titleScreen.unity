@@ -347,7 +347,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 96.55
+  m_fontSize: 96.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1168,7 +1168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.14150941, g: 0.035377353, b: 0.11118598, a: 1}
+  m_Color: {r: 0.6226415, g: 0.33775365, b: 0.53823036, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1411,8 +1411,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -8.200073, y: -3.899994}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -21.738, y: 14.973}
+  m_SizeDelta: {x: -8.123, y: -29.946}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &794192493
 MonoBehaviour:
@@ -1441,7 +1441,7 @@ MonoBehaviour:
     Programming: Katie Tackett
 
     Visuals:
-    MillionthVector'
+    MillionthVector and Luis Zuno'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d5a9aeaec1669ce4f9d6ce801f053ce0, type: 2}
   m_sharedMaterial: {fileID: -6236339696875607597, guid: d5a9aeaec1669ce4f9d6ce801f053ce0, type: 2}
@@ -1468,7 +1468,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60.6
+  m_fontSize: 56.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1698,7 +1698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6732103, g: 0.52954787, b: 0.9433962, a: 1}
+  m_Color: {r: 0.5018995, g: 0.36142755, b: 0.5849056, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2016,14 +2016,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Credits:
-
-    Music: Alexander Nakarada
-
-    Programming: Katie Tackett
-
-    Visuals:
-    MillionthVector'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d5a9aeaec1669ce4f9d6ce801f053ce0, type: 2}
   m_sharedMaterial: {fileID: -6236339696875607597, guid: d5a9aeaec1669ce4f9d6ce801f053ce0, type: 2}
@@ -2050,7 +2043,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60.6
+  m_fontSize: 54.46
   m_fontSizeBase: 54.46
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2136,8 +2129,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 24, y: -15.201996}
-  m_SizeDelta: {x: 8.177246, y: 30.404541}
+  m_AnchoredPosition: {x: 15.753052, y: -31}
+  m_SizeDelta: {x: -2.063, y: 3.9903}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1070929561
 MonoBehaviour:
@@ -2188,7 +2181,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 96.55
+  m_fontSize: 96.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3164,7 +3157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6986545, g: 1, b: 0.24056602, a: 1}
+  m_Color: {r: 0.4324062, g: 0.7169812, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

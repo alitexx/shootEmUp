@@ -9,7 +9,13 @@ public class textEditor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        beginLevel.text = ("Level " + (playerController.levelNum).ToString());
+        if (playerController.levelNum == 0)
+        {
+            beginLevel.text = ("Level 1");
+        } else
+        {
+            beginLevel.text = ("Level " + (playerController.levelNum).ToString());
+        }
         StartCoroutine(takeOffTimer());
     }
 
