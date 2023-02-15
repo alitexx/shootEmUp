@@ -9,4 +9,10 @@ public class loseWinSceneManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    public static void restartLevel (string sceneName)
+    {
+        playerController.resetValues();
+        SceneManager.LoadScene(sceneName);
+    }
 }

@@ -63,5 +63,6 @@ public class playerController : MonoBehaviour
     {
         playerPoints = 0;
         levelNum = 0;
+        pauseMenuManager.isActive = false;
     }
 }
